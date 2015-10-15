@@ -26,6 +26,8 @@
           <element id="library" level="project" name="Maven: javax.servlet:jsp-api:2.0" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.7.4" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.7.4" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.2.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.1.RELEASE" />
