@@ -23,11 +23,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="shroSpringWeb" />
+        <module name="springShiroWeb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="shiroTraining" target="1.5" />
+      <module name="shiroTraining" target="1.8" />
       <module name="shroSpringWeb" target="1.5" />
+      <module name="springShiroWeb" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
