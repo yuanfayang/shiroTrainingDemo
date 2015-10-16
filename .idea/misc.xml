@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../../2015-09-30springside/springside4/examples/quickstart" />
+    <file type="web" url="file://$PROJECT_DIR$/quickstart" />
     <file type="web" url="file://$PROJECT_DIR$/shroSpringWeb" />
     <file type="web" url="file://$PROJECT_DIR$/springShiroWeb" />
+    <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/quickstart/pom.xml" />
       </list>
     </option>
   </component>

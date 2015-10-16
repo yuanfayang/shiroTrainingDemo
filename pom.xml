@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springShiroWeb</module>
+        <module>quickstart</module>
     </modules>
 
 </project>

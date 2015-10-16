@@ -25,8 +25,16 @@
         <module name="shroSpringWeb" />
         <module name="springShiroWeb" />
       </profile>
+      <profile default="false" name="Annotation profile for quickstart" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="quickstart" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="quickstart" target="1.6" />
       <module name="shiroTraining" target="1.8" />
       <module name="shroSpringWeb" target="1.5" />
       <module name="springShiroWeb" target="1.8" />
