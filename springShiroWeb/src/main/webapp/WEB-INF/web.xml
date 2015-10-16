@@ -8,6 +8,15 @@
 
     <display-name>shiro spring 集成</display-name>
 
+    <!--spring配置开始-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:spring/spring-config.xml,
+            classpath:spring/spring-shiro-web.xml
+        </param-value>
+    </context-param>
+
     <!--session 配置-->
     <session-config>
         <session-timeout>30</session-timeout>
