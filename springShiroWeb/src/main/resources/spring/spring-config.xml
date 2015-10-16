@@ -27,18 +27,37 @@
               <aop:aspectj-autoproxy expose-proxy="true"/>
 
               <!--jdbc 连接池-->
-              <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+              <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" destroy-method="close">
+                     <property name="driverClassName" value="${jdbc.driver}"/>
+                     <property name="url" value="${jdbc.url}"/>
+                     <property name="username" value="${jdbc.usernamr}"/>
+                     <property name="password" value="${jdbc.password}"/>
               </bean>
 
-              <!--spring data jap 配置-->
-              <jpa:repositories base-package="com.changhong.yuan" transaction-manager-ref="transactionManager" entity-manager-factory-ref="ent"/>
+              <!--配置hibernate sessionFactory-->
+              <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+                     <property name="dataSource" ref="dataSource"/>
+                     <property name="hibernateProperties">
+                            <props>
+                                   <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                                   <prop key="hibernate.hbm2ddl.auto">update</prop>
+                                   <prop key="hibernate.show_sql">true</prop>
+                                   <prop key="hibernate.format_sql">true</prop>
+                            </props>
+                     </property>
+                     <property name="configLocations">
+                            <list>
+                                   <value>
+                                          classpath:hibernate/hibernate.cfg.xml
+                                   </value>
+                            </list>
+                     </property>
+              </bean>
+
               <!--jpa 事务管理器-->
-              <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-                     <property name="entityManagerFactory" ref="entityManagerFactory"/>
+              <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+                     <property name="sessionFactory" ref="sessionFactory"></property>
               </bean>
 
-              <!-- Jpa Entity Manager 配置 -->
-              <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-              </bean>
        </beans>
 </beans>
