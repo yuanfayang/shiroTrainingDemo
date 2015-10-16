@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.springside:springside-core:tests:4.GA">
+    <CLASSES>
+      <root url="jar://D:/lvm/maven/repos2/io/springside/springside-core/4.GA/springside-core-4.GA-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/lvm/maven/repos2/io/springside/springside-core/4.GA/springside-core-4.GA-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/lvm/maven/repos2/io/springside/springside-core/4.GA/springside-core-4.GA-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
