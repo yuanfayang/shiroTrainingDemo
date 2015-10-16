@@ -10,7 +10,7 @@
 
     <properties>
         <!-- 主要依赖库的版本定义 -->
-        <springside.version>4.3.0-SNAPSHOT</springside.version>
+        <springside.version>4.1.0.GA</springside.version>
         <spring.version>4.1.3.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
         <spring-data-jpa.version>1.7.1.RELEASE</spring-data-jpa.version>
@@ -76,6 +76,13 @@
 
     <!-- 依赖项定义 -->
     <dependencies>
+        <!-- SPRINGSIDE -->
+        <dependency>
+            <groupId>io.springside</groupId>
+            <artifactId>springside-core</artifactId>
+            <version>${springside.version}</version>
+        </dependency>
+
         <!-- PERSISTENCE begin -->
         <!-- hibernate -->
         <dependency>
@@ -243,6 +250,14 @@
         </dependency>
         <!-- GENERAL UTILS end -->
 
+        <!-- TEST begin -->
+        <dependency>
+            <groupId>io.springside</groupId>
+            <artifactId>springside-core</artifactId>
+            <version>${springside.version}</version>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -339,22 +354,6 @@
             <scope>test</scope>
         </dependency>
         <!-- TEST end -->
-        <!--spring side-->
-        <dependency>
-            <groupId>org.springside</groupId>
-            <artifactId>springside-core</artifactId>
-            <version>4.0.1.GA</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springside</groupId>
-            <artifactId>springside-test</artifactId>
-            <version>4.0.1.GA</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springside</groupId>
-            <artifactId>springside-modules</artifactId>
-            <version>4.0.1.GA</version>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>

@@ -7,6 +7,7 @@
           <element id="module-output" name="quickstart" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: io.springside:springside-core:4.GA" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:4.3.7.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1" />
@@ -62,9 +63,6 @@
           <element id="library" level="project" name="Maven: com.googlecode.log4jdbc:log4jdbc:1.2" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
-          <element id="library" level="project" name="Maven: org.springside:springside-core:4.0.1.GA" />
-          <element id="library" level="project" name="Maven: org.springside:springside-test:4.0.1.GA" />
-          <element id="library" level="project" name="Maven: org.springside:springside-modules:4.0.1.GA" />
         </element>
       </element>
       <element id="directory" name="META-INF">
